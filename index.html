@@ -11,7 +11,9 @@
   <style type="text/css">
 
  
- 
+
+
+
   #cat{
   	width:500px;
   	height:500px;
@@ -25,19 +27,36 @@
   	background-repeat:no-repeat;
   	background-size:cover;
   }
-  #bunny{
-  	width:500px
-  	height:700px
-  	background-image:url(bunny.jpg);
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  }
-  #bunny:hover{
-  	background-image:url(big.jpg);
-  	background-repeat: no-repeat;
-  	background-size:cover;
-  	-webkit-filter:hue-rotate(200deg);
-  }
+
+#bunny{
+  width:300px;
+  height:500px;
+  background-image:url(https://files.slack.com/files-pri/T086L74T1-F1LEJFRNZ/bunny.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#bunny:hover{
+  width:300px;
+  height:500px;
+  transform:translateX(845px);
+  transition:2s;
+ 
+}
+
+#bigbunny{
+width:300px;
+height:500px;
+background-image:url(https://files.slack.com/files-pri/T086L74T1-F1LEQBFED/big.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#bigbunny:hover{
+  width:300px;
+  height:500px;
+  transform:rotateY(0.5turn);
+  transition:1.5s;
+
+}
 
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
     span.s1 {font-kerning: none}
@@ -50,5 +69,8 @@ June 22nd, 2016
 <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 <div id='cat'></div>
 <div id='bunny'></div>
+This bunny has been in front of Kirkland House for at leat 2 days, lol
+<div id='bigbunny'></div>
+
 </body>
 </html>
