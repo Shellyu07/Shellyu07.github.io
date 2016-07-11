@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#pacman{
+			width:300px;
+			height:300px;
+			background-image:url(./Shellyu07.github.io/picture/pacman.gif);
+			background-size:contain;
+			
+			position:relative;
+			top:350px;
+			animation-name:eat;
+			animation-iteration-count: infinite;
+			animation-duration:5s
+		}
+
+		@keyframes eat{
+			0%{transform:translateX(0px);}
+			25%{opacity:1.0;}
+			50%{transform:translateX(800px);
+				opacity:0.0;}
+			75%{opacity:1.0;}
+			100%{transform:translateX(0px);}
+		}
+		#lollipop{
+			width:600px;
+			height:600px;
+			background-image: url(./Shellyu07.github.io/picture/lollipop.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			left:800px;
+			top:300px;
+			animation-name: move;
+			animation-iteration-count: infinite;
+			animation-duration:3s;
+
+		}
+
+		@keyframes move{
+			0% {transform:translateY(0px);}
+			50%{transform:translateY(100px);
+				background-image:url(./Shellyu07.github.io/picture/lollipop2.png);}
+			90%{transform:translateY(0px);
+				background-image:url(./Shellyu07.github.io/picture/lollipop3.png);}
+			100%{transform:translateY(0px);}
+		}
+
+
+		body{
+			background-image:url(./Shellyu07.github.io/picture/background.jpg);
+		}
+	</style>
+</head>
+<body>
+	<div id='pacman'></div>
+	<div id='lollipop'></div>
+</body>
+</html>
