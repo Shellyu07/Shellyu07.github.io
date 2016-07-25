@@ -1,1 +1,85 @@
-Maskingtape
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a { color: inherit; } 
+		
+
+		#homeicon{
+			width:20px;
+			height:20px;
+			background-image: url(./picture/homeicon.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:fixed;
+			right:10px;
+		}
+		#menuicon{
+			width:20px;
+			height:20px;
+			background-image: url(./picture/menuicon.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: fixed;
+		}
+
+		#menubar.visible{
+			display: block;
+			width:200px;
+			height:460px;
+			background-image: url(./picture/menubar.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:relative;
+			top:8px;
+			left:-16px;
+			font-family:Courier;
+		}
+
+		
+
+		#menubar {
+			display: none;
+		}
+	</style>
+</head>
+	</style>
+</head>
+<body>
+	</div>
+	<a href="https://shellyu07.github.io/interest"><div id='homeicon'></div></a>
+	<div id='menuicon'></div>
+	<div id='menubar'>
+		<br><br><center><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a></center></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/muhan">MUHAN</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/planner">Planner</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/maskingtape">MaskingTape</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/stamps">Stamps</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/foodntravel">Food n Travel</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/things">Things</a></center></font></p>
+	</div>
+
+
+	<script type="text/javascript">
+
+	var menuicon = document.getElementById('menuicon');
+	var menubar = document.getElementById('menubar');
+	menuicon.addEventListener('mouseenter', function(){
+		menubar.classList.add('visible');
+		// menubar.div.classList.add('visible')
+	});
+		menuicon.addEventListener('mouseleave', function(){
+		menubar.classList.remove('visible')
+	});
+
+		menubar.addEventListener('mouseenter',function(){
+		menubar.classList.add('visible')});
+
+
+		menubar.addEventListener('mouseleave', function(){
+		menubar.classList.remove('visible')
+	});
+	</script>
+</body>
+</html>

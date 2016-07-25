@@ -1,1 +1,131 @@
-Stamps
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		a { color: inherit; } 
+		
+		body{
+			background-color: #F5E7FF;
+		}
+		#homeicon{
+			width:20px;
+			height:20px;
+			background-image: url(./picture/homeicon.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:fixed;
+			right:10px;
+		}
+		#menuicon{
+			width:20px;
+			height:20px;
+			background-image: url(./picture/menuicon.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: fixed;
+		}
+
+		#menubar.visible{
+			display: block;
+			width:200px;
+			height:460px;
+			background-image: url(./picture/menubar.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:relative;
+			top:8px;
+			left:-16px;
+			font-family:Courier;
+		}
+
+		
+
+		#menubar {
+			display: none;
+		}
+
+		#picture{
+		width:800px;
+		height:800px;
+		background-size:contain;
+		background-repeat: no-repeat;
+		transition:.5s;
+
+	</style>
+</head>
+<body>
+	</div>
+
+	<a href="https://shellyu07.github.io/interest"><div id='homeicon'></div></a>
+	<div id='menuicon'></div>
+	<div id='menubar'>
+		<br><br><center><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a></center></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/muhan">MUHAN</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/planner">Planner</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/maskingtape">MaskingTape</a></center></font></p>
+		<center><font size="5"><p style="font-family:Courier"><a href="https://shellyu07.github.io/inks">Inks</a></center></font></p></font>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/foodntravel">Food n Travel</a></center></font></p>
+		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/things">Things</a></center></font></p>
+	</div>
+	<center><div id="picture"></div></center>
+
+	<script type="text/javascript">
+
+	var menuicon = document.getElementById('menuicon');
+	var menubar = document.getElementById('menubar');
+	menuicon.addEventListener('mouseenter', function(){
+		menubar.classList.add('visible');
+		// menubar.div.classList.add('visible')
+	});
+		menuicon.addEventListener('mouseleave', function(){
+		menubar.classList.remove('visible')
+	});
+
+		menubar.addEventListener('mouseenter',function(){
+		menubar.classList.add('visible')});
+
+
+		menubar.addEventListener('mouseleave', function(){
+		menubar.classList.remove('visible')
+	});
+
+		var items = [
+        "./picture/stamps/1.jpg",
+        "./picture/stamps/2.jpg",
+        "./picture/stamps/3.jpg",
+        "./picture/stamps/4.jpg",
+        "./picture/stamps/5.jpg",
+        "./picture/stamps/6.jpg",
+        "./picture/stamps/7.jpg",
+        "./picture/stamps/8.jpg",
+        "./picture/stamps/9.jpg",
+        "./picture/stamps/10.jpg",
+        "./picture/stamps/11.jpg",
+        "./picture/stamps/12.jpg",
+        "./picture/stamps/13.jpg",
+        "./picture/stamps/14.jpg",
+       
+
+    ];
+
+
+    function go() {
+
+
+        return items[Math.floor(Math.random() * items.length)]
+    }
+
+
+
+   
+
+    var picture = document.getElementById("picture");
+
+    function pictureChange () {picture.style.backgroundImage = "url(" + go() + ")";}
+
+     setInterval(pictureChange, 1500);
+
+	</script>
+</body>
+</html>
