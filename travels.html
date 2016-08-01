@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Never Stop</title>
-	<style type="text/css">
-		a { color: inherit; } 
-		
-
-		#homeicon{
-			width:20px;
-			height:20px;
-			background-image: url(./picture/homeicon.png);
-			background-size: contain;
-			background-repeat: no-repeat;
-			position:fixed;
-			right:10px;
-		}
-		#menuicon{
-			width:20px;
-			height:20px;
-			background-image: url(./picture/menuicon.png);
-			background-size: contain;
-			background-repeat: no-repeat;
-			position: fixed;
-		}
-
-		#menubar.visible{
-			display: block;
-			width:200px;
-			height:460px;
-			background-image: url(./picture/menubar.png);
-			background-size: contain;
-			background-repeat: no-repeat;
-			position:fixed;
-			top:8px;
-			left:-16px;
-			font-family:Courier;
-			z-index: 10;
-		}
-
-		
-
-		#menubar {
-			display: none;
-		}
-	</style>
-</head>
-<body>
-</div>
-	<a href="https://shellyu07.github.io/interest"><div id='homeicon'></div></a>
-	<div id='menuicon'></div>
-	<div id='menubar'>
-		<br><center><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a></center></p>
-		<center><a href="https://shellyu07.github.io/inks">Inks</a></center></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/muhan">MUHAN</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/planner">Planner</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/maskingtape">MaskingTape</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/stamps">Stamps</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/food">Food</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/things">Things</a></center></font></p>
-	</div>
+  <head>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwsFyTDrNjAmDPDWZuVIa2V3tKJrKkdjA&callback=initMap" async defer></script>
+    <script>
 
 
-	<script type="text/javascript">
+    function initMap() {
+  var myLatLng = {lat: 43.817072, lng: 125.323544};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 5,
+    center: myLatLng
+  });
 
-	var menuicon = document.getElementById('menuicon');
-	var menubar = document.getElementById('menubar');
-	menuicon.addEventListener('mouseenter', function(){
-		menubar.classList.add('visible');
-		// menubar.div.classList.add('visible')
-	});
-		menuicon.addEventListener('mouseleave', function(){
-		menubar.classList.remove('visible')
-	});
+  var markerA = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Changchun,China',
+  });
 
-		menubar.addEventListener('mouseenter',function(){
-		menubar.classList.add('visible')});
+var markerB = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(39.887986, 116.357594),
+        title: 'Beijing, China',
+        map: map,
+    });
+
+var markerC = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(45.517717, -73.568551),
+        title: 'Montreal, QC',
+        map: map,
+    });
+
+var markerD = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(43.656329, -79.365734
+),
+        title: 'Toronto, On',
+        map: map,
+    });
+
+var markerE = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(22.287566, 114.188257
+),
+        title: 'Hongkong, China',
+        map: map,
+    });
+
+var markerF = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(34.339610, 108.943821
+),
+        title: 'Xian, China',
+        map: map,
+    });
+
+var markerG = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(45.420623, -75.690531
+),
+        title: 'Ottwa, ON',
+        map: map,
+    });
 
 
-		menubar.addEventListener('mouseleave', function(){
-		menubar.classList.remove('visible')
-	});
-	</script>
 
-</body>
+
+google.maps.event.addListener(markerA, 'click', function() {
+    window.location = '';
+});
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
 </html>
