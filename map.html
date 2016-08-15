@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwsFyTDrNjAmDPDWZuVIa2V3tKJrKkdjA&callback=initMap" async defer></script>
+    <script>
+
+
+    function initMap() {
+  var myLatLng = {lat: 43.817072, lng: 125.323544};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 5,
+    center: myLatLng
+  });
+
+  var markerA = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Changchun,China',
+  });
+
+var markerB = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(39.887986, 116.357594),
+        title: 'Beijing, China',
+        map: map,
+    });
+
+var markerC = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(45.517717, -73.568551),
+        title: 'Montreal, QC',
+        map: map,
+    });
+
+var markerD = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(43.656329, -79.365734
+),
+        title: 'Toronto, On',
+        map: map,
+    });
+
+var markerE = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(22.287566, 114.188257
+),
+        title: 'Hongkong, China',
+        map: map,
+    });
+
+var markerF = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(34.339610, 108.943821
+),
+        title: 'Xian, China',
+        map: map,
+    });
+
+var markerG = new google.maps.Marker(
+
+    {position: new google.maps.LatLng(45.420623, -75.690531
+),
+        title: 'Ottwa, ON',
+        map: map,
+    });
+
+
+
+
+google.maps.event.addListener(markerA, 'click', function() {
+    window.location = '';
+});
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
