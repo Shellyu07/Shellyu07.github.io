@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>アニメ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        body{
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: #FFC900;
+        }
+        h1 {
+            color: blue;
+                    }    
+        h2 {
+            color:red;
+        }    
+        #shonen{
+            color:#005DC6;
+        }
+        #shojo{
+            color:#FFA6E5;
+        }
+        #haikyuu{
+            width:500px;
+        }
+        #vampire{
+            width:500px;
+        }
+        #gundam{
+            width:500px;
+        }
+    
+    </style>
+</head>
+<body>
+<center><h1>Introduction to Anime</h1></center>
+<h2>Definition</h2>
+<p><em>'Anime'</em> is Japanese hand-drawn or computer-made animation. <br>
+This word came form the Japanese pronounciation of the word "animation". <br>
+(People usually talk about anime with manga, many mangas become anime. Mangas are Japanese comics.)<br>
+It is a really famous form of media that not only teenagers love but also many adults and kids.<br>
+<button type="button" onclick="alert('Most anime is not appropriate for kids under the age of 14.')">DISCLAIMER</button><br>
+Anime is well-known around the world now, some of the most famous anime in North America are:<br>
+    <ul>
+        <li><em>Naruto</em></li>
+        <li><em>Pokemon</em></li>
+        <li><em>Death Note</em></li>
+        <li><em>One Piece</em></li>
+        <li><em>Dragon Ball Z</em></li>
+    </ul>
+It is very interesting how the anime that are listed above all belong to the same genre- <b>Shonen</b>.
+Shonen is Japanese for "boy" and therefore, the audience for shonen anime is expected to be a male audience.<br>
+We are gonna introduce _____ of the main genre in anime to you in this website, do you want to take a guess?
+<br><button onclick="document.getElementById('answeris2').innerHTML = answeris2();">Click to know the answer!</button>
+<br><p id="answeris2"></p>
+
+ </p>
+<h2>Index</h2>
+<ul>
+    The Two Main Types of Anime
+    <li id="shonen"><a href="#shonen-p">Shonen</a></li>
+    <li id="shojo"><a href="#shojo-p">Shojo</a></li>
+    <br>
+    <li id="video-c"><a href="#video">Video Clips</a></li>
+    <li id="list"><a href="#list-a">List of Recomendations</a></li>
+    <li id="gamea"><a href="#game">Game</a></li>
+</ul>
+<br><br>
+<h2 id="shonen-p">Shonen</h2>
+    <p><em>Shonen</em>, also written as <em>shounen</em>, means "boy" in Japanese. The anime that is targeted towards teenage boys are called 'Shonen Anime', or simply'Shonen'. Usually shonen anime involve a lot of action, adventure, and often sci-fi/fantasy. Some of the longest and most famous shonen series have been playing for decades, for example, Naruto. <br>
+    The characters of this type of anime mostly are boys, in order to let the readers make connections. And the main characters are usually heroic character. <br>
+    Anime related to sports are also becoming popular these days, like <em>Yuri On Ice!</em>, <em>Haikyuu!!</em>, and <em> Free. </em></p>
+    <button onclick="shonenpic()">Click to see some examples of Shonen anime</button>
+    <p id="shonen-pic"></p>
+<h2 id="shojo-p">Shojo</h2>
+    <p> <em>Shojo</em>, also written as <em>shoujo</em>, means "girl" in Japanese. This type of anime/manga genre expects a girl audience. Usually shojo anime are shorter than shonen and revolve around romance, or they're about school life and fitting in.
+    You can find that the main character tends to be a girl, or if the main character is male, there is usually a girl that he revolves around. Generally the main character will have some sort of insecurity or internal problem they are trying to overcome. 
+    Popular <em>shojo</em> anime include <em> Fruit Basket </em>, <em> Vampire Knight </em>, and <em> Ouran High School Host Club </em>. </p>
+    <button onclick="shojopic()">Click to see some examples of Shojo anime</button>
+      <p id="shojo-pic"></p>
+<h2 id="video">Video Clips</h2>
+    <p> Here are links to the first episodes of some popular anime! </p>
+    <ol>
+        <li> <a href="http://www.crunchyroll.com/naruto-shippuden/episode-1-homecoming-509768">Naruto Shippuden</a> </li>
+        <li> <a href="http://www.crunchyroll.com/bleach/episode-1-untitled-543611">Bleach</a> </li>
+        <li> <a href="https://rumble.com/v2zc44-fullmetal-alchemist-episode-1-english-subbed.html">Fullmetal Alchemist</a></li>
+        <li> <a href="https://www.hulu.com/watch/175400">Princess Tutu</a></li>
+<h2 id="list-a">List of Recommendations</h2>
+     <p> We will recommend... </p>
+     <p id= "recommend"> </p>
+     <p> of our favorite anime for you to watch! </p>
+        <ul>
+            <li> Soul Eater </li>
+            <li> Boku No Hero Academia </li>
+            <li> Tonari No Kaibutsu-Kun </li>
+            <li> Noragami </li>
+            <li> Naruto </li>
+            <li> Princess Tutu </li>
+            <li> Fullmetal Alchemist</li>
+            <li> Blue Exorcist </li> 
+            <li> Digimon </li>
+            <li> Tokyo Ghoul </li>
+            <li> Hitman Reborn! </li>
+            <li> Psycho-pass </li>
+            
+        </ul>
+<h2 id="game">Game Time!</h2>
+<p id="haikyuu-ans">Which genre does the anime belongs to? (hover over to see the answer!)</p>
+<img id="haikyuu" src="http://blog.honeyfeed.fm/wp-content/uploads/2015/12/Oikawa-Tooru-Haikyuu-wallpaper3.jpg" onmouseover="haikyuu1()" onmouseout="haikyuu2()"><br>
+<img id="gundam" src="http://vignette4.wikia.nocookie.net/toonami/images/7/7e/Gundam-seed-gundam-seed-destiny-24054275-1024-768.jpg/revision/latest?cb=20130324040722" onmouseover="gundam1()" onmouseout="gundam2()"><br>
+<img id="vampire" src="http://vignette1.wikia.nocookie.net/vampireknight/images/8/8a/Vampire_Knight_Anime.jpg/revision/latest/scale-to-width-down/495?cb=20130115090829" onmouseover="vampire1()" onmouseout="vampire2()">
+
+
+<script type="text/javascript">
+    function shonenpic(){
+        var image = [
+        "<img src='http://img12.deviantart.net/710e/i/2009/319/c/0/naruto_characters_by_nate_ng.jpg'>",
+        "<img src='http://www.animenewsnetwork.com/images/encyc/A18191-2291224427.1469808485.jpg'>",
+        "<img src='http://assets.pokemon.com/assets/cms2/img/watch-pokemon-tv/seasons/season19/season19_ep11_ss01.jpg'>",
+        "<img src='http://vignette2.wikia.nocookie.net/onepiece/images/b/b8/One_Piece_Schick_Razors.png/revision/latest?cb=20130224093941'>",
+        "<img src='https://s-media-cache-ak0.pinimg.com/originals/ee/00/d8/ee00d880100c4966dd534cf5b69660da.jpg'>"
+        ]
+        var text = "";
+        var i;
+        for (i = 0; i < image.length; i++){
+            text += " " + image[i] + "<br>" ;
+        }
+        document.getElementById('shonen-pic').innerHTML = text;
+    }
+     function answeris2(){
+        return "The answer is " + 2 + "," + " " + "Are you right?" + "<br>" + "<br>" + "<br>" + "<br>" +
+        "Lower down the page, there will be explanations about the main two genre in anime: " + "<em>" + 
+        "Shonen" + "</em>" + " " + "and" + "<em>" + " " + "Shojo" + "</em>" + "." ;
+    }
+    function shojopic(){
+        var image = [
+        "<img src='http://vignette2.wikia.nocookie.net/ouran/images/3/34/Ouran_High_School_Host_Club_199021357_2e80127bd3.jpg/revision/latest?cb=20140418185240'>",
+        "<img src='http://images.dannychoo.com/cgm/images/post/20121001/26688/156793/large/23d78e8346edde2a8c38d3aeebf0f4ea.jpg'>",
+        "<img src='https://upload.wikimedia.org/wikipedia/en/4/4b/Mermaidcast2.jpg'>",
+        "<img src='http://vignette2.wikia.nocookie.net/luckystar/images/1/14/School_Mates.jpg/revision/latest?cb=20081010012620'>",
+        ]
+        var text = "";
+        var i;
+        for (i = 0; i < image.length; i++){
+            text += " " + image[i] + "<br>" ;
+        }
+        document.getElementById('shojo-pic').innerHTML = text;
+    }
+    function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("recommend").innerHTML = window.myFunction(6, 2);
+
+function haikyuu1(){
+        document.getElementById('haikyuu').src = "https://files.slack.com/files-pri/T44UW2EUU-F44QK873M/shonen.jpg?pub_secret=89896850dc";
+    }
+function haikyuu2(){
+        document.getElementById('haikyuu').src = "http://blog.honeyfeed.fm/wp-content/uploads/2015/12/Oikawa-Tooru-Haikyuu-wallpaper3.jpg";
+    }
+
+function vampire1(){
+        document.getElementById('vampire').src = "https://files.slack.com/files-pri/T44UW2EUU-F44V72085/shojo.jpg?pub_secret=195bc167ef";
+}
+function vampire2(){
+        document.getElementById('vampire').src = "http://vignette1.wikia.nocookie.net/vampireknight/images/8/8a/Vampire_Knight_Anime.jpg/revision/latest/scale-to-width-down/495?cb=20130115090829";
+}
+function gundam1(){
+        document.getElementById('gundam').src = "https://files.slack.com/files-pri/T44UW2EUU-F44QK873M/shonen.jpg?pub_secret=89896850dc";
+}
+function gundam2(){
+        document.getElementById('gundam').src = "http://vignette4.wikia.nocookie.net/toonami/images/7/7e/Gundam-seed-gundam-seed-destiny-24054275-1024-768.jpg/revision/latest?cb=20130324040722";
+}
+</script>
+</body>
+</html>
