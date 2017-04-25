@@ -22,35 +22,93 @@
 			background-image: url(./picture/menuicon.png);
 			background-size: contain;
 			background-repeat: no-repeat;
+			top:0px;
+			position: fixed;
+			display: block;
+			z-index: 10px;
+		}
+		
+		ul{
+			list-style-type: none;
+			margin:0;
+			padding: 0;
+			overflow: hidden;
+			width: 69px;
+			background-color:transparent;
+		}
+		li{
+			float: left;
 			position: fixed;
 		}
-
-		#menubar.visible{
+		li a, .dropbtn{
+			display: inline-block;
+			color: #B7BAFC;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover, .dropdown:hover .dropbtn{
+			background-color: #DBEDFE;
+		}
+		li.dropdown{
+			display: inline-block;
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #E9F4FE;
+			min-width: 160px;
+			box-shadow: 10px 8px 16px 2px rgba(10,0,0,0.2);
+			z-index: 1;
+		}
+		.dropdown-content a{
+			color: #B7BAFC;
+			padding: 12px 16px;
+			text-decoration: none;
 			display: block;
-			width:200px;
-			height:460px;
-			background-image: url(./picture/menubar.png);
-			background-size: contain;
-			background-repeat: no-repeat;
+			text-align: left;
+
+		}
+		.dropdown-content a:hover{
+			background-color: #DBEDFE;
+		}
+		.dropdown:hover .dropdown-content{
+			display:block;
+		}
+
+/*		#menubar.visible{
+			display: block;
 			position:fixed;
-			top:8px;
-			left:-16px;
-			font-family:Courier;
+			top:25px;
 			z-index: 10;
 		}
 
-		
-
 		#menubar {
 			display: none;
-		}
+		}*/
+
 	</style>
 </head>
 <body>
-	</div>
+	
 	<a href="https://shellyu07.github.io/interest"><div id='homeicon'></div></a>
-	<div id='menuicon'></div>
-	<div id='menubar'>
+		<ul id='menubar'>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Menu</a>
+			<div class = "dropdown-content">
+				<em><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a>
+				<a href="https://shellyu07.github.io/muhan">MUHAN</a>
+				<a href="https://shellyu07.github.io/inks">Inks</a>
+				<a href="https://shellyu07.github.io/maskingtape">MaskingTape</a>
+				<a href="https://shellyu07.github.io/stamps">Stamps</a>
+				<a href="https://shellyu07.github.io/food">Food</a>
+				<a href="https://shellyu07.github.io/things">Things</a></em>
+			</div>
+		</li>
+		</ul>
+
+<!-- 	<div id='menubar'>
+
 		<br><br><center><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a></center></p>
 		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/muhan">MUHAN</a></center></font></p>
 		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/inks">Inks</a></center></font></p>
@@ -58,10 +116,10 @@
 		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/stamps">Stamps</a></center></font></p>
 		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/food">Food</a></center></font></p>
 		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/things">Things</a></center></font></p>
-	</div>
+	</div> -->
 
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 
 	var menuicon = document.getElementById('menuicon');
 	var menubar = document.getElementById('menubar');
@@ -80,6 +138,6 @@
 		menubar.addEventListener('mouseleave', function(){
 		menubar.classList.remove('visible')
 	});
-	</script>
+	</script> -->
 </body>
 </html

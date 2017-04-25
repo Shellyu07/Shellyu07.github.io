@@ -20,7 +20,54 @@
 			position:fixed;
 			right:10px;
 		}
-		#menuicon{
+		ul{
+			list-style-type: none;
+			margin:0;
+			padding: 0;
+			overflow: hidden;
+			width: 69px;
+			background-color:transparent;
+		}
+		li{
+			float: left;
+			position: fixed;
+		}
+		li a, .dropbtn{
+			display: inline-block;
+			color: #B7BAFC;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover, .dropdown:hover .dropbtn{
+			background-color: #DBEDFE;
+		}
+		li.dropdown{
+			display: inline-block;
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #E9F4FE;
+			min-width: 150px;
+			box-shadow: 10px 8px 16px 2px rgba(10,0,0,0.2);
+			z-index: 10;
+		}
+		.dropdown-content a{
+			color: #B7BAFC;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+
+		}
+		.dropdown-content a:hover{
+			background-color: #DBEDFE;
+		}
+		.dropdown:hover .dropdown-content{
+			display:block;
+		}
+/*		#menuicon{
 			width:20px;
 			height:20px;
 			background-image: url(./picture/menuicon.png);
@@ -47,7 +94,7 @@
 
 		#menubar {
 			display: none;
-		}
+		}*/
 
 		#colorful{
 			width:500px;
@@ -216,16 +263,20 @@
 </div>
 	<div id='colorful'></div>
 	<a href="https://shellyu07.github.io/interest"><div id='homeicon'></div></a>
-	<div id='menuicon'></div>
-	<div id='menubar'>
-		<br><br><center><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a></center></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/muhan">MUHAN</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/planner">Planner</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/maskingtape">MaskingTape</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/stamps">Stamps</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/food">Food</a></center></font></p>
-		<center><font size="3"><p style="font-family:Courier"><a href="https://shellyu07.github.io/things">Things</a></center></font></p>
-	</div>
+		<ul id='menubar'>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Menu</a>
+			<div class = "dropdown-content">
+				<em><a href="https://shellyu07.github.io/lolita">Lolita n Uniform</a>
+				<a href="https://shellyu07.github.io/muhan">MUHAN</a>
+				<a href="https://shellyu07.github.io/inks">Inks</a>
+				<a href="https://shellyu07.github.io/maskingtape">MaskingTape</a>
+				<a href="https://shellyu07.github.io/stamps">Stamps</a>
+				<a href="https://shellyu07.github.io/food">Food</a>
+				<a href="https://shellyu07.github.io/things">Things</a></em>
+			</div>
+		</li>
+		</ul>
 
 	<div id='bungboxicon'></div>
 		<br><br><br><br><tab1><font size="4px"><a href="http://bung-box.com">Bungbox</a></font></tab1>
@@ -264,7 +315,7 @@
 	<div id='wishlist'></div>
 
 
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 
 	var menuicon = document.getElementById('menuicon');
 	var menubar = document.getElementById('menubar');
@@ -285,6 +336,6 @@
 	});
 
 
-	</script>
+	</script> -->
 </body>
 </html>
